@@ -2,11 +2,24 @@ Pierwszy wpis:
     1.  Instalacja Django:
         pip install django
     2.  Stworzenie projektu
-        django-admin startproject nazwa_projektu:
+        django-admin startproject Blog:
     3.  Uruchomienie servera developerskiego:
-        dc nazwa-projektu
+        dc Blog
         python manage.py runserver
-    4.  Stworzenie pierwszej aplikacji:
-        python manage.py startapp nazwa_aplikacji
+    4.  Stworzenie aplikacji Posts i Galleries :
+        python manage.py startapp Posts
     5.  Dodaj aplikację do projektu:
         settings -> Installed_App
+Drugi wpis:
+    1.  Stworzenie głównego widoku aplikacji Posts:
+        -views -> dodaj odpowiednie funcje
+        -urls -> Dodaj ścieżki
+        -template -> Stwórz odpowiednie strony. base i list
+        -dodaj ścieżkę do głównego pliku urls
+    2. Stworzenie bazy danych
+        -Stworzenie bazy danych w models
+        -Zapisywanie zdjęć - Odpowiedni zapis w settings
+        -python manage.py makemigrations
+        -python manage.py migrate
+        -python manage.py createsuperuser
+
