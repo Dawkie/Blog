@@ -1,0 +1,12 @@
+Pierwszy wpis:
+    1.  Instalacja Django:
+        pip install django
+    2.  Stworzenie projektu
+        django-admin startproject nazwa_projektu:
+    3.  Uruchomienie servera developerskiego:
+        dc nazwa-projektu
+        python manage.py runserver
+    4.  Stworzenie pierwszej aplikacji:
+        python manage.py startapp nazwa_aplikacji
+    5.  Dodaj aplikację do projektu:
+        settings -> Installed_App
