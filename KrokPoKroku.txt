@@ -8,13 +8,13 @@ Pierwszy wpis:
         python manage.py runserver
     4.  Stworzenie aplikacji Posts i Galleries :
         python manage.py startapp Posts
-    5.  Dodaj aplikację do projektu:
+    5.  Dodanie aplikację do projektu:
         settings -> Installed_App
 Drugi wpis:
     1.  Stworzenie głównego widoku aplikacji Posts:
         -views -> dodaj odpowiednie funcje
-        -urls -> Dodaj ścieżki
-        -template -> Stwórz odpowiednie strony. base i list
+        -urls -> dodaj ścieżki
+        -template -> stwórz odpowiednie strony. base i list
         -dodaj ścieżkę do głównego pliku urls
     2. Stworzenie bazy danych
         -Stworzenie bazy danych w models
@@ -22,4 +22,22 @@ Drugi wpis:
         -python manage.py makemigrations
         -python manage.py migrate
         -python manage.py createsuperuser
+Trzeci wpis:
+    1.  Poprawne przedstawienie strony głównej:
+        -Dodanie templejt login -> Cripsy Form
+            *W settingd nalerzy dodać zapis w INSTALLED APPS
+        -Rozszerzenie base
+        -Uzupełnienie list
+        -Dodanie ścieżek do urls związanych z logowaniem
+        -dodanie definicji do views związanych z logowaniem
+        -dodanie odpowiednich zapisów do settings związanych z logowaniem
+    2. Dodanie formularza Post:
+        -admin.py - wpis dotyczący formularza
+        -forms.py - formularz oparty na modelu Post
+        -views.py - dodanie definicji aby dodawać wpisy: post_list, post_details, post_create
+        -paginator - segregowanie dużych ilości postów
+        -list.html - Uzupełnienie kodu
+        -details.html - Przygotowanie strony dla podglądu i edycji postów
+        -create.html - Przygotowanie strony do tworzenia postów
+        -obrazki - Nalerzy dodać odpowiedni zapis w pliku głównym urls
 

@@ -40,6 +40,9 @@ INSTALLED_APPS = [
 
     'Galleries',
     'Posts',
+
+    "crispy_forms",
+    "crispy_bootstrap5",
 ]
 
 MIDDLEWARE = [
@@ -128,3 +131,10 @@ MEDIA_ROOT = BASE_DIR / "Media"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_URL = "Posts:login"
+LOGIN_REDIRECT_URL = "Posts:list"
+LOGOUT_REDIRECT_URL = "Posts:login"
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
